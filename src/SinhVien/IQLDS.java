@@ -12,7 +12,7 @@ package SinhVien;
 public interface IQLDS {
     
     public void Them(CaNhan c);
-    public CaNhan Xoa(String t);
+    public void Xoa(String t);
     public void InDS();
     
 }

@@ -35,11 +35,12 @@ public class HocSinh extends CaNhan{
     public void setNangKhieu(String NangKhieu) {
         this.NangKhieu = NangKhieu;
     } 
+    
     @Override
     public void HienThiTT() {
          
         System.out.println("Tên: "+getTen()+"\n"+
-                            "Tuổi: "+getTuoi()+"\n"+
+                            "Tuổi: "+getTuoi()+"\n"+  //VTH
                             "Địa Chỉ: "+getDiachi()+"\n"+
                             "Năng Khiếu: "+NangKhieu+"\n"+
                             "lớp: "+Lop+"\n" 

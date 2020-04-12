@@ -5,25 +5,33 @@
  */
 package SinhVien;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 /**
  *
  * @author DT
  */
 public class QLDS implements IQLDS{
 
+    ArrayList<CaNhan> dsCaNhan =new ArrayList<>();
     @Override
     public void Them(CaNhan c) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+         dsCaNhan.add(c);
     }
 
     @Override
-    public CaNhan Xoa(String t) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void Xoa(String t) {
+        dsCaNhan.remove(t);
     }
 
     @Override
     public void InDS() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Iterator itr=dsCaNhan.iterator();
+        while (itr.hasNext()) { //VTH
+            Object next = itr.next();
+            System.out.println(next);
+        }
     }
     
 }

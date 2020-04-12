@@ -10,11 +10,12 @@ package SinhVien;
  * @author DT
  */
 public class GiaoVien extends CaNhan{
-    private String MonDay ;
-    private String toBoMon;
+    private String MonDay ; 
+    private String toBoMon; //VTH
 
     public GiaoVien(String MonDay, String toBoMon, String Ten, int Tuoi, String Diachi, String sdt) {
-        super(Ten, Tuoi, Diachi, sdt);
+        
+        super(Ten, Tuoi, Diachi, sdt); //VTH
         this.MonDay = MonDay;
         this.toBoMon = toBoMon;
     }
