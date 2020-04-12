@@ -38,7 +38,12 @@ public class GiaoVien extends CaNhan{
 
     @Override
     public void HienThiTT() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+         System.out.println("Tên: "+getTen()+"\n"+
+                            "Tuổi: "+getTuoi()+"\n"+
+                            "Địa Chỉ: "+getDiachi()+"\n"+
+                            "Năng Khiếu: "+toBoMon+"\n"+
+                            "lớp: "+MonDay+"\n" 
+        );
     }
     
 }
