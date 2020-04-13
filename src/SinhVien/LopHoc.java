@@ -6,30 +6,41 @@
 package SinhVien;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  *
  * @author DT
  */
 public class LopHoc {
-    
+    QLDS ql=new QLDS();
     public void ThemHS(HocSinh hs)
     {
-        
+        ql.Them(hs);
     }
-    public void ThemHS(GiaoVien vg)
+    public void ThemGv(GiaoVien gv)
     {
-        
+        ql.Them(gv);
     }
     
-    public ArrayList<GiaoVien> inDsGv()
+    public void inDsGv()
     {
-        
-        return null;
-    }
-    public ArrayList<HocSinh> inDsHs()
+        Iterator itr=ql.dsCaNhan.iterator();
+        while (itr.hasNext()) {
+            Object next = itr.next();
+            if(next instanceof GiaoVien)
+            System.out.println(next); 
+        } 
+    } 
+    
+    public void inDsHs()
     {
-        return null;
+       Iterator itr=ql.dsCaNhan.iterator();
+        while (itr.hasNext()) {
+            Object next = itr.next();
+            if(next instanceof HocSinh)
+            System.out.println(next); 
+        } 
         
     }
 }

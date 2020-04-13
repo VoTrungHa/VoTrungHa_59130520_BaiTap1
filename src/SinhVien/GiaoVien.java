@@ -35,6 +35,17 @@ public class GiaoVien extends CaNhan{
     public void setToBoMon(String toBoMon) {
         this.toBoMon = toBoMon;
     }
+
+    @Override
+    public String toString() {
+        return "Tên: "+getTen()+"\n"+
+                            "Tuổi: "+getTuoi()+"\n"+
+                            "Địa Chỉ: "+getDiachi()+"\n"+
+                            "Năng Khiếu: "+toBoMon+"\n"+
+                            "lớp: "+MonDay+"\n" ;
+        
+    }
+    
     
 
     @Override
